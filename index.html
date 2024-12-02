@@ -10,6 +10,11 @@
 
 	<style>
 
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		
 		@font-face { font-family: NexaRustSans; 
 			src: url('Fonts/NexaRustSans-Black.otf'); 
 			src: url('Fonts/NexaRustSans-Black.ttf'); 
@@ -27,9 +32,9 @@
 			color: #a48a6b;
 			font-size: 95vw;
 			text-align: center;
-		}
+		}*/
 
-		h2 {
+		/*h2 {
 			font-family: LeagueGothic, Fallback;
 			color: #a48a6b;
 			font-size: 32px;
@@ -39,7 +44,7 @@
 		#top a:link {
 			font-family: NexaRustSans, Fallback;
 			color: #a48a6b;
-			font-size: 140px;
+			font-size: 201px;
 			text-align: center;
 			text-decoration: none;
 		}
@@ -47,7 +52,7 @@
 		#top a:visited {
 			font-family: NexaRustSans, Fallback;
 			color: #a48a6b;
-			font-size: 140px;
+			font-size: 201px;
 			text-align: center;
 			text-decoration: none;
 		}
@@ -55,7 +60,7 @@
 		#top a:hover {
 			font-family: NexaRustSans, Fallback;
 			color: #f4dbbd;
-			font-size: 140px;
+			font-size: 201px;
 			text-align: center;
 			text-decoration: none;
 		}
@@ -63,7 +68,7 @@
 		#top a:active {
 			font-family: NexaRustSans, Fallback;
 			color: #a48a6b;
-			font-size: 140px;
+			font-size: 201px;
 			text-align: center;
 			text-decoration: none;
 		}
@@ -71,35 +76,85 @@
 		#bottom a:link {
 			font-family: LeagueGothic, Fallback;
 			color: #a48a6b;
-			font-size: 40px;
+			font-size: 70px;
 			text-decoration: none;
 		}
 
 		#bottom a:visited {
 			font-family: LeagueGothic, Fallback;
 			color: #a48a6b;
-			font-size: 40px;
+			font-size: 70px;
 			text-decoration: none;
 		}
 
 		#bottom a:hover {
 			font-family: LeagueGothic, Fallback;
 			color: #f4dbbd;
-			font-size: 40px;
+			font-size: 70px;
 			text-decoration: none;
 		}
 
 		#bottom a:active {
 			font-family: LeagueGothic, Fallback;
 			color: #a48a6b;
-			font-size: 40px;
+			font-size: 70px;
 			text-decoration: none;
 		}
 
-		.image-container {
-			background-image: url('Home_BG.jpg');
+		.imagecontainer {
+			background-image: url("Home_BG.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: top;
 			background-repeat: no-repeat;
+			position: relative;
+			/*z-index: -1;*/
+			max-width: 100%;
+			min-height: 1000px;
 		}
+
+		.imagecontainertwo {
+			position: absolute;
+			top: 0px;
+			background-image: url("Home_BG2.png");
+			background-size: cover;
+			background-position: top;
+			background-repeat: no-repeat;
+			z-index: 1;
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.container {
+			position: relative;
+		}
+
+		.column {
+			float: left;
+			width: 31%;
+			padding: 20px;
+		}
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.bodyimage {
+			position: relative;
+			z-index: 2;
+			max-width: 100%;
+		}
+
+
+		/*.imagecontainer {
+			background-image: url("Home_BG.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			max-width: 100%;
+			max-height: 100%;
+		}*/
 
 		.fit {
 			max-width: 100%;
@@ -109,6 +164,10 @@
 		.center {
 			display: block;
 			margin: auto;
+		}
+
+		.otherlinks {
+			margin-left: 40px;
 		}
 
 		/*@font-face {
@@ -127,36 +186,65 @@
 
 <body> 
 
-	<!--<h1 style="margin-top: -12px;">Aaron Hedgpeth</h1>-->
+	<header class="imagecontainer" style="padding-top= 0px; margin-top= 0px">
 
-	<div id="top" style="margin-top: -8px">
-		<a href=https://www.aaronhedgpeth.com>AARON HEDGPETH</a>
-	</div> 
+		<!--<h1 style="margin-top: -12px;">Aaron Hedgpeth</h1>-->
 
-	<img class="image-container center fit">
+		<div id="top" style="margin-top: 0px; padding-top: 12px; text-align: center">
+			<a href=https://www.aaronhedgpeth.com>AARON HEDGPETH</a>
+		</div> 
 
-	<div id="bottom" style="padding-top: 20px">
-		<a href=backgrounds>Backgrounds</a>
-	</div>
+		<!--<img class="image-container center fit" src="Home_BG.jpg">-->
 
-	<div id="bottom" style="padding-top: 20px">
-		<a href=photography>Photography</a>
-	</div>
+		<div id="bottom" class="otherlinks" style="padding-top: 110px; padding-left: 25px">
+			<a href=backgrounds>Backgrounds</a>
+		</div>
 
-	<div id="bottom" style="padding-top: 20px">
-			<a href=paintings>Paintings</a>
-	</div>
+		<div id="bottom" class="otherlinks" style="padding-top: 20px; padding-left: 25px">
+			<a href=photography>Photography</a>
+		</div>
 
-	<div id="bottom" style="padding-top: 20px">
-			<a href=music>Music</a>
-	</div>
+		<div id="bottom" class="otherlinks" style="padding-top: 20px; padding-left: 25px">
+				<a href=paintings>Paintings</a>
+		</div>
 
-	<!--<h2 style="padding-top: 20px;">Backgrounds</h2>
-	<h2>Photography</h2>
-	<h2>Composites</h2>
-	<h2>Paintings</h2>
-	<h2>Music</h2>-->
+		<div id="bottom" class="otherlinks" style="padding-top: 20px; padding-left: 25px; padding-bottom: 900px">
+				<a href=music>Music</a>
+		</div>
 
+	</header>
+
+	<!--<div class="imagecontainertwo">
+			<img src="Home_BG2.png" alt="bazinga" class="imagecontainertwo">
+	</div>-->
+
+	<main class="container">
+
+		<img src="Home_BG2.png" alt="funny bg" class="imagecontainer2" style="position: absolute; top: -500px; max-width: 100%">
+
+		<div class="row" style="padding-left: 20px; padding-top: 0px; margin-top: 0px">
+			<div class="column">
+				<img src="Home_Ex6.jpg" alt="A staircase bathed in dim red light." class="bodyimage">
+				<img src="Home_Ex2.jpg" alt="ADD SEPMTHING" class="bodyimage" style="padding-top: 30px">
+			</div>
+			<div class="column">
+				<img src="Home_Ex5.jpg" alt="ADD SOMETHING" class="bodyimage">
+			</div>
+			<div class="column">
+				<img src="Home_Ex1.jpg" alt="add something" class="bodyimage">
+			</div>
+		</div>
+
+
+	</main>
+
+
+
+	<!--<body class="imagecontainertwo" style="padding-top= 0px; margin-top= 0px">
+
+		<p>nodsifdubsiubdsi</p>
+
+	</body>-->
 
 
 </body>
