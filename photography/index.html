@@ -10,56 +10,142 @@
 
 	<style>
 
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		
 		@font-face { font-family: NexaRustSans; 
-			src: url('NexaRustSans-Black.otf'); 
-			src: url('NexaRustSans-Black.ttf'); 
+			src: url('Fonts/NexaRustSans-Black.otf'); 
+			src: url('Fonts/NexaRustSans-Black.ttf'); 
 		}
 
 		@font-face { font-family: LeagueGothic;
-			src: url('LeagueGothic-Regular.otf');
-			src: url('leaguegothic-regular-webfont.ttf');
+			src: url('Fonts/LeagueGothic-Regular.otf');
+			src: url('Fonts/leaguegothic-regular-webfont.ttf');
 			/*src: url('leaguegothic-regular-webfont.woff');
 			src: url('leaguegothic-regular-webfont.eot');*/
 		}
 
-		h1 {
+		#top a:link {
 			font-family: NexaRustSans, Fallback;
 			color: #a48a6b;
-			font-size: 95vw;
+			font-size: 134px;
 			text-align: center;
+			text-decoration: none;
 		}
 
-		h2 {
-			font-family: LeagueGothic, Fallback;
-			color: #a48a6b;
-			font-size: 32px;
-			font-stretch: 150%;
-		}
-
-		#top a {
+		#top a:visited {
 			font-family: NexaRustSans, Fallback;
 			color: #a48a6b;
-			font-size: 95vw;
+			font-size: 134px;
 			text-align: center;
+			text-decoration: none;
 		}
 
-		h2 {
+		#top a:hover {
+			font-family: NexaRustSans, Fallback;
+			color: #f4dbbd;
+			font-size: 134px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		#top a:active {
+			font-family: NexaRustSans, Fallback;
+			color: #a48a6b;
+			font-size: 134px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		#bottom a:link {
 			font-family: LeagueGothic, Fallback;
 			color: #a48a6b;
-			font-size: 32px;
-			font-stretch: 150%;
+			font-size: 47px;
+			text-decoration: none;
 		}
 
-
-		/*@font-face {
-			font-family: 'NexaRustSans';
-			src: url('NexaRustSans-Black.otf');
-			src: url('NexaRustSans-Black.ttf')
+		#bottom a:visited {
+			font-family: LeagueGothic, Fallback;
+			color: #a48a6b;
+			font-size: 47px;
+			text-decoration: none;
 		}
 
-		h1 {
-			font-family: 'NexaRustSans', Fallback, sans-serif;
-		}*/
+		#bottom a:hover {
+			font-family: LeagueGothic, Fallback;
+			color: #f4dbbd;
+			font-size: 47px;
+			text-decoration: none;
+		}
+
+		#bottom a:active {
+			font-family: LeagueGothic, Fallback;
+			color: #a48a6b;
+			font-size: 47px;
+			text-decoration: none;
+		}
+
+		.imagecontainer {
+			background-image: url("Home_BG.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: top;
+			background-repeat: no-repeat;
+			position: relative;
+			/*z-index: -1;*/
+			max-width: 100%;
+			min-height: 1000px;
+		}
+
+		.imagecontainertwo {
+			position: absolute;
+			top: 0px;
+			background-image: url("Home_BG2.png");
+			background-size: cover;
+			background-position: top;
+			background-repeat: no-repeat;
+			z-index: 1;
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.container {
+			position: relative;
+		}
+
+		.column {
+			float: left;
+			width: 30%;
+			padding: 20px;
+		}
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.bodyimage {
+			position: relative;
+			z-index: 2;
+			max-width: 100%;
+		}
+
+		.fit {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.center {
+			display: block;
+			margin: auto;
+		}
+
+		.otherlinks {
+			margin-left: 40px;
+		}
 
 	</style>
 		
@@ -67,22 +153,31 @@
 
 <body> 
 
-	<!--<h1 style="margin-top: -12px;">Aaron Hedgpeth</h1>-->
+	<header class="imagecontainer" style="padding-top= 0px; margin-top= 0px">
 
-	<div id="top">
-		<a href=https://ahedgpeth.github.io/aaronhedgpeth-portfolio/>AARON HEDGPETH</a>
+		<div id="top" style="margin-top: 0px; padding-top: 12px; text-align: center">
+			<a href=https://www.aaronhedgpeth.com>AARON HEDGPETH</a>
+		</div> 
 
-	<h2 style="padding-top: 20 px;">Backgrounds</h2>
-	<h2>Photography</h2>
-	<h2>Composites</h2>
-	<h2>Paintings</h2>
-	<h2>Music</h2>
+		<div id="bottom" class="otherlinks" style="padding-top: 65px; padding-left: 5px">
+			<a href=illustrations>Illustrations</a>
+		</div>
+		
+		<div id="bottom" class="otherlinks" style="padding-top: 20px; padding-left: 5px">
+				<a href=animation>Animation</a>
+		</div>
+
+		<div id="bottom" class="otherlinks" style="padding-top: 20px; padding-left: 5px">
+			<a href=photography>Photography</a>
+		</div>
+
+		<div id="bottom" class="otherlinks" style="padding-top: 20px; padding-left: 5px; padding-bottom: 700px">
+				<a href=music>Music</a>
+		</div>
+
+	</header>
+
+	<main class="container">
 
 
-
-</body>
-
-  
-</html>
-
-<!--@font-face { font-family: NexaRustSans; src: url('NexaRustSans-Black.otf') }-->
+	</main>
