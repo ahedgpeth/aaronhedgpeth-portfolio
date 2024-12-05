@@ -1,22 +1,18 @@
-﻿body
-{
-		html, body {
-			margin: 0;
-			padding: 0;
-		}
-		
-		@font-face { font-family: NexaRustSans; 
-			src: url('Fonts/NexaRustSans-Black.otf'); 
-			src: url('Fonts/NexaRustSans-Black.ttf'); 
+﻿		@font-face { font-family: nexarustsans; 
+			src: url('./fonts/nexarustsans-black.otf'); 
+			src: url('./fonts/nexarustsans-black.ttf'); 
 		}
 
-		@font-face { font-family: LeagueGothic;
-			src: url('Fonts/LeagueGothic-Regular.otf');
-			src: url('Fonts/leaguegothic-regular-webfont.ttf');
+		@font-face { font-family: leaguegothic;
+			src: url('./fonts/leaguegothic-regular.otf');
+			src: url('./fonts/leaguegothic-regular.ttf');
 		}
+
+	body
+	{
 
 		#top a:link {
-			font-family: NexaRustSans, Fallback;
+			font-family: nexarustsans, Fallback;
 			color: #a48a6b;
 			font-size: 134px;
 			text-align: center;
@@ -24,7 +20,7 @@
 		}
 
 		#top a:visited {
-			font-family: NexaRustSans, Fallback;
+			font-family: nexarustsans, Fallback;
 			color: #a48a6b;
 			font-size: 134px;
 			text-align: center;
@@ -32,7 +28,7 @@
 		}
 
 		#top a:hover {
-			font-family: NexaRustSans, Fallback;
+			font-family: nexarustsans, Fallback;
 			color: #f4dbbd;
 			font-size: 134px;
 			text-align: center;
@@ -40,7 +36,7 @@
 		}
 
 		#top a:active {
-			font-family: NexaRustSans, Fallback;
+			font-family: nexarustsans, Fallback;
 			color: #a48a6b;
 			font-size: 134px;
 			text-align: center;
@@ -48,28 +44,28 @@
 		}
 
 		#bottom a:link {
-			font-family: LeagueGothic, Fallback;
+			font-family: leaguegothic, Fallback;
 			color: #a48a6b;
 			font-size: 47px;
 			text-decoration: none;
 		}
 
 		#bottom a:visited {
-			font-family: LeagueGothic, Fallback;
+			font-family: leaguegothic, Fallback;
 			color: #a48a6b;
 			font-size: 47px;
 			text-decoration: none;
 		}
 
 		#bottom a:hover {
-			font-family: LeagueGothic, Fallback;
+			font-family: leaguegothic, Fallback;
 			color: #f4dbbd;
 			font-size: 47px;
 			text-decoration: none;
 		}
 
 		#bottom a:active {
-			font-family: LeagueGothic, Fallback;
+			font-family: leaguegothic, Fallback;
 			color: #a48a6b;
 			font-size: 47px;
 			text-decoration: none;
@@ -135,4 +131,4 @@
 			margin-left: 40px;
 		}
 
-}
+	}
