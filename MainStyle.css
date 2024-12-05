@@ -1,16 +1,18 @@
 ﻿body
 {
-		margin: 0;
-		padding: 0;
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
 		
 		@font-face { font-family: NexaRustSans; 
-			src: url('/Fonts/NexaRustSans-Black.otf'); 
-			src: url('/Fonts/NexaRustSans-Black.ttf'); 
+			src: url('Fonts/NexaRustSans-Black.otf'); 
+			src: url('Fonts/NexaRustSans-Black.ttf'); 
 		}
 
 		@font-face { font-family: LeagueGothic;
-			src: url('/Fonts/LeagueGothic-Regular.otf');
-			src: url('/Fonts/leaguegothic-regular-webfont.ttf');
+			src: url('Fonts/LeagueGothic-Regular.otf');
+			src: url('Fonts/leaguegothic-regular-webfont.ttf');
 		}
 
 		#top a:link {
