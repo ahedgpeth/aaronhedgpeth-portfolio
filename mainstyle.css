@@ -16,7 +16,7 @@ body
 	#top a:link {
 		font-family: nexarustsans, Fallback;
 		color: #a48a6b;
-		font-size: 95vw;
+		font-size: 133px;
 		text-align: center;
 		text-decoration: none;
 	}
@@ -24,7 +24,7 @@ body
 	#top a:visited {
 		font-family: nexarustsans, Fallback;
 		color: #a48a6b;
-		font-size: 95vw;
+		font-size: 133px;
 		text-align: center;
 		text-decoration: none;
 	}
@@ -32,7 +32,7 @@ body
 	#top a:hover {
 		font-family: nexarustsans, Fallback;
 		color: #f4dbbd;
-		font-size: 95vw;
+		font-size: 133px;
 		text-align: center;
 		text-decoration: none;
 	}
@@ -40,7 +40,7 @@ body
 	#top a:active {
 		font-family: nexarustsans, Fallback;
 		color: #a48a6b;
-		font-size: 95vw;
+		font-size: 133px;
 		text-align: center;
 		text-decoration: none;
 	}
@@ -218,6 +218,7 @@ body
 
 	.otherlinks {
 		margin-left: 40px;
+		padding-left: 16px;
 	}
 
 	.baseotherlinks {
