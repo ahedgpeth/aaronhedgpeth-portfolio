@@ -138,8 +138,8 @@ body
 		background-position: top;
 		background-repeat: no-repeat;
 		position: relative;
-		/*z-index: -1;*/
 		width: 100vw;
+		max-width: 100%;
 		min-height: 1000px;
 	}
 
@@ -180,7 +180,9 @@ body
 	.column {
 		float: left;
 		width: 30%;
-		padding: 20px;
+		display: block;
+		margin: 1.4vw;
+		/*padding: 20px;*/
 	}
 
 	.row::after {
