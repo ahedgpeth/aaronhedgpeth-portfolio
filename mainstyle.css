@@ -1,134 +1,237 @@
-﻿		@font-face { font-family: nexarustsans; 
-			src: url('./fonts/nexarustsans-black.otf'); 
-			src: url('./fonts/nexarustsans-black.ttf'); 
-		}
+﻿		
+@font-face { font-family: nexarustsans; 
+	src: url('./fonts/nexarustsans-black.otf'); 
+	src: url('./fonts/nexarustsans-black.ttf'); 
+}
 
-		@font-face { font-family: leaguegothic;
-			src: url('./fonts/leaguegothic-regular.otf');
-			src: url('./fonts/leaguegothic-regular.ttf');
-		}
+@font-face { font-family: leaguegothic;
+	src: url('./fonts/leaguegothic-regular.otf');
+	src: url('./fonts/leaguegothic-regular.ttf');
+}
 
-	body
-	{
 
-		#top a:link {
-			font-family: nexarustsans, Fallback;
-			color: #a48a6b;
-			font-size: 134px;
-			text-align: center;
-			text-decoration: none;
-		}
+body
+{
 
-		#top a:visited {
-			font-family: nexarustsans, Fallback;
-			color: #a48a6b;
-			font-size: 134px;
-			text-align: center;
-			text-decoration: none;
-		}
-
-		#top a:hover {
-			font-family: nexarustsans, Fallback;
-			color: #f4dbbd;
-			font-size: 134px;
-			text-align: center;
-			text-decoration: none;
-		}
-
-		#top a:active {
-			font-family: nexarustsans, Fallback;
-			color: #a48a6b;
-			font-size: 134px;
-			text-align: center;
-			text-decoration: none;
-		}
-
-		#bottom a:link {
-			font-family: leaguegothic, Fallback;
-			color: #a48a6b;
-			font-size: 47px;
-			text-decoration: none;
-		}
-
-		#bottom a:visited {
-			font-family: leaguegothic, Fallback;
-			color: #a48a6b;
-			font-size: 47px;
-			text-decoration: none;
-		}
-
-		#bottom a:hover {
-			font-family: leaguegothic, Fallback;
-			color: #f4dbbd;
-			font-size: 47px;
-			text-decoration: none;
-		}
-
-		#bottom a:active {
-			font-family: leaguegothic, Fallback;
-			color: #a48a6b;
-			font-size: 47px;
-			text-decoration: none;
-		}
-
-		.imagecontainer {
-			background-image: url("Home_BG.jpg");
-			background-size: cover;
-			background-attachment: fixed;
-			background-position: top;
-			background-repeat: no-repeat;
-			position: relative;
-			/*z-index: -1;*/
-			max-width: 100%;
-			min-height: 1000px;
-		}
-
-		.imagecontainertwo {
-			position: absolute;
-			top: 0px;
-			background-image: url("Home_BG2.png");
-			background-size: cover;
-			background-position: top;
-			background-repeat: no-repeat;
-			z-index: 1;
-			max-width: 100%;
-			max-height: 100%;
-		}
-
-		.container {
-			position: relative;
-		}
-
-		.column {
-			float: left;
-			width: 30%;
-			padding: 20px;
-		}
-
-		.row::after {
-			content: "";
-			clear: both;
-			display: table;
-		}
-
-		.bodyimage {
-			position: relative;
-			z-index: 2;
-			max-width: 100%;
-		}
-
-		.fit {
-			max-width: 100%;
-			max-height: 100%;
-		}
-
-		.center {
-			display: block;
-			margin: auto;
-		}
-
-		.otherlinks {
-			margin-left: 40px;
-		}
-
+	#top a:link {
+		font-family: nexarustsans, Fallback;
+		color: #a48a6b;
+		font-size: 133px;
+		text-align: center;
+		text-decoration: none;
 	}
+
+	#top a:visited {
+		font-family: nexarustsans, Fallback;
+		color: #a48a6b;
+		font-size: 133px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	#top a:hover {
+		font-family: nexarustsans, Fallback;
+		color: #f4dbbd;
+		font-size: 133px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	#top a:active {
+		font-family: nexarustsans, Fallback;
+		color: #a48a6b;
+		font-size: 133px;
+		text-align: center;
+		text-decoration: none;
+	}
+
+	h1.heading1 {
+		font-family: nexarustsans, Fallback;
+		color: #f4dbbd;
+		font-size: 47px;
+		text-align: center;
+		text-decoration: none;
+		z-index: 8;
+	}
+
+	#bottom a:link {
+		font-family: leaguegothic, Fallback;
+		color: #a48a6b;
+		font-size: 47px;
+		text-decoration: none;
+	}
+
+	#bottom a:visited {
+		font-family: leaguegothic, Fallback;
+		color: #a48a6b;
+		font-size: 47px;
+		text-decoration: none;
+	}
+
+	#bottom a:hover {
+		font-family: leaguegothic, Fallback;
+		color: #f4dbbd;
+		font-size: 47px;
+		text-decoration: none;
+	}
+
+	#bottom a:active {
+		font-family: leaguegothic, Fallback;
+		color: #a48a6b;
+		font-size: 47px;
+		text-decoration: none;
+	}
+
+	#base a:link {
+		font-family: leaguegothic, Fallback;
+		color: #f4dbbd;
+		font-size: 29px;
+		text-decoration: none;
+	}
+
+	#base a:visited {
+		font-family: leaguegothic, Fallback;
+		color: #f4dbbd;
+		font-size: 29px;
+		text-decoration: none;
+	}
+
+	#base a:hover {
+		font-family: leaguegothic, Fallback;
+		color: #ffffff;
+		font-size: 29px;
+		text-decoration: none;
+	}
+
+	#base a:active {
+		font-family: leaguegothic, Fallback;
+		color: #f4dbbd;
+		font-size: 29px;
+		text-decoration: none;
+	}
+
+	#base h1 {
+		font-family: nexarustsans, Fallback;
+		color: #f4dbbd;
+		font-size: 37px;
+		text-decoration: none;
+	}
+
+	#base h2 {
+		font-family: leaguegothic, Fallback;
+		color: #f4dbbd;
+		font-size: 29px;
+		text-decoration: none;	
+	}
+
+	#base p {
+		font-family: leaguegothic, Fallback;
+		color: #f4dbbd;
+		font-size: 29px;
+		text-decoration: none;	
+	}
+
+	.imagecontainer {
+		background-image: url("Home_BG.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: top;
+		background-repeat: no-repeat;
+		position: relative;
+		/*z-index: -1;*/
+		width: 100vw;
+		min-height: 1000px;
+	}
+
+	.imagecontainertwo {
+		position: absolute;
+		top: 0px;
+		background-image: url("Home_BG2.png");
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+		z-index: 1;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.imagecontainerthree {
+		position: absolute;
+		bottom: 0px;
+		background-image: url("Home_BG3.png");
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+		z-index: 1;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.divimagecontainer {
+		width: 40%;
+		height: 40%;
+		margin: 0 auto;
+	}
+
+	.container {
+		position: relative;
+	}
+
+	.column {
+		float: left;
+		width: 30%;
+		padding: 20px;
+	}
+
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	.columnbase {
+		float: left;
+		width: 35%;
+	}
+
+	.rowbase::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	.bodyimage {
+		position: relative;
+		z-index: 2;
+		max-width: 100%;
+	}
+
+	.fit {
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	.center {
+		display: block;
+		margin: auto;
+	}
+
+	.otherlinks {
+		margin-left: 40px;
+	}
+
+	.baseotherlinks {
+		margin-left: 2vw;
+	}
+
+	.footer {
+		background-image: url("Home_BG3.png");
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+		position: relative;
+		max-width: 100%;
+		top: -100000px;
+	}
+
+}
